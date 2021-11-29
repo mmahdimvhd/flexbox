@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+}
+@font-face {
+    font-family: 'byekan';
+    src: url('BYekan.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+  font-family: "byekan";
+  margin: 0;
+}
+.header {
+  padding: 60px;
+  text-align: center;
+  background: #777;
+  color: white;
+}
+.myimg{
+  width: 30%;
+  border-radius: 50% ;
+}
+.navbar {
+  display: flex;
+  background-color: #333;
+}
+
+.navbar a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.side {
+  flex: 20%;
+  background-color: #e1e1e1;
+  padding: 20px;
+}
+
+
+.main {
+  flex: 80%;
+  background-color: white;
+  padding: 20px;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
